@@ -1,3 +1,8 @@
 fn main(){
-  rust_engine::clear_screen_to_color(1.0, 4.0, 1.0, 5.0);
+  let mut blue_amount:f64 = 0.0;
+
+  rust_engine::set_event_handler(move || {
+    blue_amount+=0.1;
+    rust_engine::clear_screen_to_color(0.0, 0.0, blue_amount, 1.0);
+  })
 }
