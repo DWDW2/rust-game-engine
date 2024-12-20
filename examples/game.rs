@@ -1,9 +1,3 @@
-extern "C"{
-  pub fn log_number(number:usize);
-}
-
-fn main() {
-  unsafe {
-    log_number(4);
-  }
+fn main(){
+  rust_engine::clear_screen_to_color(1.0, 4.0, 1.0, 5.0);
 }
