@@ -2,6 +2,16 @@
   <body style="margin: 0; overflow-y: hidden; overflow-x: hidden">
     <canvas id="my_canvas" style="width: 100vw; height: 100vh"></canvas>
     <script>
+      /** @type {HTMLCanvasElement} */
+      let canvas = document.getElementById("my_canvas");
+      let gl = canvas.getContext("webgl");
+
+      gl.canvas.width = canvas.clientWidth;
+      gl.canvas.height = canvas.clientHeight;
+
+      gl.viewport(0, 0, canvas.clientWidth, canvas.clientHeight);
+      gl.clearColor(1.0, 0.0, 0.0, 1.0);
+      gl.clear(gl.COLOR_BUFFER_BIT);
       let imports = {
         env: {
           log_number: function log_number(number) {
