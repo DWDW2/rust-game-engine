@@ -1,0 +1,1 @@
+/Users/zhansarsadriev/Developer/rust/rust-engine/target/wasm32-unknown-unknown/debug/examples/game.wasm: /Users/zhansarsadriev/Developer/rust/rust-engine/examples/game.rs /Users/zhansarsadriev/Developer/rust/rust-engine/src/lib.rs
