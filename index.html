@@ -28,6 +28,9 @@
         imports
       ).then(function (result) {
         result.instance.exports.main();
+        document.onkeydown = function (event) {
+          result.instance.exports.key_pressed();
+        };
       });
     </script>
   </body>
