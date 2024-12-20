@@ -1,3 +1,9 @@
+extern "C"{
+  pub fn log_number(number:usize);
+}
+
 fn main() {
-  println!("hello world")
+  unsafe {
+    log_number(4);
+  }
 }
